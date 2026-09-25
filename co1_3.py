@@ -1,20 +1,17 @@
-#list comprehension
-#(a) generat positive list of numbers from a given list of integers
-numbers=[-9,13,-20,5,35,18]
-positive_number=[x for x in numbers if x>0]
-print("Positive number:",positive_number)
+#positive iist
+numbers = [-2,-1,0,1,2,3,-3,-4,4]
+positive = [n for n in numbers if n > 0]
+print("positive numbers",positive)
 
-#square of N number
-n=5
-squares=[x*x for x in range (1,n+1)]
-print("square of n number:",squares)
+#sqr of n number
+squares = [n**2 for n in numbers]
+print(squares)
 
-#form a list of vowels selected from a given word
-word="python programming"
-vowels=[char for char in word if char in "aeiouAEIOU"]
-print("Vowels in the word:",vowels)
+#list of vowels
+word = "Hello world"
+vowels = [char for char in word.lower() if char in'aeiou']
+print(vowels)
 
-#list ordinary valu of each element of a word
-word="hello"
-ordinal_values=[ord(char) for char in word]
-print("ordinal values:",ordinal_values)
+#list ordinal value
+ordinal_values = [ ord(char) for char in word ]
+print(ordinal_values)
